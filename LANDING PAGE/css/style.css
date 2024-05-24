@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  position: relative;
+  background-color: chartreuse;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("path/to/your/image.jpg"); /* Replace with your image path */
+  background-size: cover;
+  z-index: -1; /* Behind the content */
+  opacity: 0.7; /* Adjust opacity as needed */
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Add your media queries for responsive design */
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.right-side a {
+  margin-left: 20px;
+  color: bisque;
+  text-decoration: solid;
+}
+
+.right-side a:hover {
+  text-decoration: underline;
+}
+
+.right-side a.login,
+.right-side a.signup {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Pricing CSS */
+.pricing-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pricing-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+}
+
+.card a.button {
+  background-color: #04aa6d;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card a.button:hover {
+  background-color: #038c5a;
+}
+
+.logo {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+p {
+  margin-left: 20px;
+  margin-right: 18px;
+  column-gap: normal;
+}
+
+.carousel-item img {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.smaller-image {
+  width: 40%; /* Adjust the width as needed */
+}
+
+.carousel-caption-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 1; /* Ensure the overlay is above the image */
+}
+
+.carousel-caption {
+  z-index: 2; /* Ensure the caption is above the overlay */
+}
+
+.carousel-indicators img {
+  width: 70px;
+  display: block;
+}
+
+.carousel-indicators button {
+  width: max-content !important;
+}
+
+.carousel-indicators {
+  position: unset;
+}
+
+.carousel-description {
+  width: 60%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the paragraph */
+  text-align: center; /* Center align the text */
+}
+
+.carousel-item:nth-child(3) .carousel-description {
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+.dropdown-content a {
+  white-space: nowrap;
+}
+
+.footer {
+  background-color:goldenrod;
+  color:white;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.footer-content div {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-content h4 {
+  margin-top: 0;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+  color: black !important;
+  text-decoration: none;
+
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-media a {
+  color: black !important;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.footer .social-media a:hover {
+  color: #ddd;
+}
+
+.footer-content .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-content .social-media a {
+  margin-bottom: 10px;
+ 
+}
+
+footer {
+  margin-top: auto; /* Push the footer to the bottom of the page */
+}

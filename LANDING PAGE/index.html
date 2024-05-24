@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPTI FITNESS</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .logo {
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h1,
+      p {
+        margin-left: 20px;
+        margin-right: 18px;
+        column-gap: normal;
+      }
+      .carousel-item img {
+        width: 100%; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+      .smaller-image {
+        width: 40%; /* Adjust the width as needed */
+      }
+      .carousel-caption-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Semi-transparent black background */
+        z-index: 1; /* Ensure the overlay is above the image */
+      }
+      .carousel-caption {
+        z-index: 2; /* Ensure the caption is above the overlay */
+      }
+      .carousel-indicators img {
+        width: 70px;
+        display: block;
+      }
+      .carousel-indicators button {
+        width: max-content !important;
+      }
+      .carousel-indicators {
+        position: unset;
+      }
+      .carousel-description {
+        width: 60%; /* Adjust the width as needed */
+        margin: 0 auto; /* Center the paragraph */
+        text-align: center; /* Center align the text */
+      }
+      .carousel-item:nth-child(3) .carousel-description {
+        font-size: 18px; /* Adjust the font size as needed */
+      }
+      .dropdown-content a {
+        white-space: nowrap;
+      }
+      .quick-links ul li a {
+        color: black; /* Change color of the "About Us" link */
+      }
+
+      .social-media a {
+        color: black;
+        padding: 10px; /* Change color of the social media icons */
+      }
+      .social-media a i {
+        font-size: 24px; /* Adjust the font size as needed */
+      }
+      .white-text {
+        color: white;
+        background-color: black;
+        margin: 0; /* Remove default margins */
+        padding: 20px;
+      }
+    </style>
+    <script src="functions.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-image"></div>
+      <div class="logo">
+        <i class="fas fa-dumbbell" style="font-size: 36px"></i>Opti Fitness
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown-content">
+            <a href="page2.html">Personal Training</a><br />
+            <a href="#">Nutrition Coaching</a><br />
+            <a href="#">Group Workouts</a><br />
+          </div>
+        </li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <div class="right-side">
+        <a href="login.php" class="login">Login</a>
+        <a href="signup.php" class="signup">Sign Up</a>
+      </div>
+    </nav>
+
+    <div
+      class="carousel slide"
+      id="carouselDemo"
+      data-bs-wrap="true"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img
+            src="images/pexels-anush-gorak-1229356.jpg"
+            class="d-block mx-auto smaller-image"
+          />
+          <div class="carousel-caption-overlay"></div>
+          <div class="carousel-caption">
+            <h5>Discover Your Potential with Opti Fitness</h5>
+            <p class="carousel-description">
+              Embark on a journey towards a healthier, happier lifestyle with
+              Opti Fitness. Our comprehensive approach to fitness encompasses
+              not only physical strength but also mental resilience and overall
+              well-being. With personalized workout plans, expert nutrition
+              advice, and a supportive community, we're here to guide you
+              towards your fitness goals. Join us and unleash your inner athlete
+              as we break barriers and inspire each other to push beyond our
+              comfort zones. Your transformation begins here
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img
+            src="images/impexels-pikx-by-panther-2092479.jpg"
+            class="d-block mx-auto smaller-image"
+          />
+          <div class="carousel-caption-overlay"></div>
+          <div class="carousel-caption">
+            <h5>Discover Our Nutrition Coaching</h5>
+            <p class="carousel-description">
+              Unlock the secrets to a balanced diet and healthy eating habits
+              with our expert nutrition coaching services. Whether you're aiming
+              to lose weight, build muscle, or simply improve your overall
+              well-being, our certified nutritionists are here to guide you
+              every step of the way. Learn how to fuel your body with the right
+              nutrients and optimize your performance both in and out of the
+              gym.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="mygym.jpg" class="d-block mx-auto smaller-image" />
+          <div class="carousel-caption-overlay"></div>
+          <div class="carousel-caption">
+            <h5>Join Our Group Workouts</h5>
+            <p class="carousel-description">
+              Experience the energy and camaraderie of our group workout
+              sessions! Whether you're a beginner or a seasoned fitness
+              enthusiast, our group classes cater to all levels and interests.
+              From high-intensity interval training to yoga and Pilates, there's
+              something for everyone. Join our supportive community and sweat it
+              out together as you work towards your fitness goals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          class="active"
+          data-bs-target="#carouselDemo"
+          data-bs-slide-to="0"
+        >
+          <img src="pexels-anush-gorak-1229356.jpg" />
+        </button>
+        <button
+          type="button"
+          data-bs-target="#carouselDemo"
+          data-bs-slide-to="1"
+        >
+          <img src="pexels-pikx-by-panther-2092479.jpg" />
+        </button>
+        <button
+          type="button"
+          data-bs-target="#carouselDemo"
+          data-bs-slide-to="2"
+        >
+          <img src="mygym.jpg" />
+        </button>
+      </div>
+    </div>
+    <br />
+
+    <h1>Welcome to Opti Fitness - Your Gateway to a Healthier Lifestyle!</h1>
+    <p
+      style="font-family: Tahoma, Geneva, Verdana, sans-serif; font-size: 18px"
+    >
+      At Opti Fitness, we believe that achieving your fitness goals is not just
+      about physical strength, but also about mental resilience and overall
+      well-being. Our mission is to empower individuals like you to embark on a
+      journey towards a healthier, happier life. Whether you're a seasoned
+      athlete or just starting out on your fitness journey, Opti Fitness is here
+      to guide and support you every step of the way. With personalized workout
+      plans, expert nutrition advice, and a supportive community, we're
+      committed to helping you reach your full potential and become the best
+      version of yourself. Join us as we break barriers, challenge limits, and
+      inspire each other to push beyond our comfort zones. Together, let's
+      redefine what it means to be fit and embrace a lifestyle of vitality,
+      strength, and vitality. Get ready to unleash your inner athlete and
+      discover the transformative power of fitness with Opti Fitness. Your
+      journey starts here.
+    </p>
+    <hr
+      style="
+        height: 5px;
+        border-width: 0;
+        color: black;
+        background-color: black;
+      "
+    />
+    <h1 class="white-text">Why Us</h1>
+    <p class="white-text">
+      "Opti Fitness stands as your premier choice for achieving your fitness
+      aspirations, providing unparalleled coaching, tailored plans, and a
+      dedicated commitment to your success through personalized training,
+      nutrition coaching, and invigorating group workouts."
+    </p>
+    <div
+      class="why-choose-section"
+      style="background-color: black; color: white"
+    >
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <div class="row my-5">
+              <div class="col-6 col-md-6">
+                <div class="feature">
+                  <div class="icon">
+                    <i class="fas fa-dumbbell fa-3x"></i>
+                  </div>
+                  <h3>Personalized Training</h3>
+                  <p>
+                    Experience personalized workout plans tailored to your
+                    fitness goals, guided by our expert trainers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <div class="feature">
+                  <div class="icon">
+                    <i class="fas fa-heartbeat fa-3x"></i>
+                  </div>
+                  <h3>Expert Nutrition Coaching</h3>
+                  <p>
+                    Unlock the secrets to a balanced diet and healthy eating
+                    habits with our certified nutritionists.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <div class="feature">
+                  <div class="icon">
+                    <i class="fas fa-users fa-3x"></i>
+                  </div>
+                  <h3>Inclusive Group Workouts</h3>
+                  <p>
+                    Join invigorating group workout sessions catered to all
+                    fitness levels and interests, fostering camaraderie and
+                    motivation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <div class="feature">
+                  <div class="icon">
+                    <i class="fas fa-medal fa-3x"></i>
+                  </div>
+                  <h3>Goal-Oriented Programs</h3>
+                  <p>
+                    Our programs are designed to help you set and achieve
+                    realistic fitness goals, whether it's weight loss, muscle
+                    gain, or overall wellness.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="img-wrap">
+              <img
+                src="questions-6988157_1280.png"
+                alt="Fitness Training"
+                class="img-fluid"
+                style="height: 500px"
+                width="450px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-buttons">
+      <button onclick="showPersonalTraining()">Personal Training</button>
+      <button onclick="showNutritionCoaching()">Nutrition Coaching</button>
+      <button onclick="showGroupWorkouts()">Group Workouts</button>
+    </div>
+
+    <div id="personalTraining" class="pricing-table">
+      <div class="column">
+        <div class="card">
+          <h3>1 Month Plan</h3>
+          <p>$200</p>
+          <ul>
+            <li>4 sessions/month</li>
+            <li>Customized workout plans</li>
+            <li>Progress tracking</li>
+          </ul>
+          <a href="#" class="button">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>6 Months Plan</h3>
+          <p>$1000</p>
+          <ul>
+            <li>24 sessions/6 months</li>
+            <li>Personalized coaching</li>
+            <li>Free fitness assessment</li>
+          </ul>
+          <a href="#" class="button">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>1 Year Plan</h3>
+          <p>$1800</p>
+          <ul>
+            <li>52 sessions/year</li>
+            <li>Exclusive access to gym facilities</li>
+            <li>Monthly progress reports</li>
+          </ul>
+          <a href="#" class="button">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="nutritionCoaching" class="pricing-table" style="display: none">
+      <div class="column">
+        <div class="card">
+          <h3>Monthly Subscription</h3>
+          <p>$150/month</p>
+          <ul>
+            <li>Personalized meal plans</li>
+            <li>Weekly consultations</li>
+            <li>Recipe suggestions</li>
+          </ul>
+          <a href="#" class="button">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="groupWorkouts" class="pricing-table" style="display: none">
+      <div class="column">
+        <div class="card">
+          <h3>Drop-in Session</h3>
+          <p>$20/session</p>
+          <ul>
+            <li>Flexible scheduling</li>
+            <li>Access to group classes</li>
+            <li>Expert trainers</li>
+          </ul>
+          <a href="#" class="button">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <footer style="background-color: darkcyan">
+      <div class="footer-content">
+        <div class="contact-info">
+          <p>Contact Us:</p>
+          <p>Email: info@example.com</p>
+          <p>Phone: 123-456-7890</p>
+          <p>Address: 123 Main St, City, Country</p>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!-- Add more navigation links as needed -->
+          </ul>
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <!-- Add more social media icons as needed -->
+        </div>
+      </div>
+      <div class="copyright">
+        <p style="text-align: center">
+          &copy; 2024 Your Website Name. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
